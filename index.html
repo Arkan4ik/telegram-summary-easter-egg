@@ -32,14 +32,25 @@
   button:hover {
     background: #3a75e0;
   }
+  .button-row {
+    display: flex;
+    gap: 12px;
+    transform: translateY(-100px);
+  }
 </style>
 </head>
 <body>
   <img id="pic" src="eastern-egg1.jpeg" alt="Шо ти тут клацаєш? Сильно цікаво?">
-  <button id="swap" type="button">да?</button>
+  <div class="button-row">
+    <button id="yes" type="button">да?</button>
+    <button id="no" type="button">ні</button>
+  </div>
   <script>
-    document.getElementById('swap').addEventListener('click', function () {
+    document.getElementById('yes').addEventListener('click', function () {
       alert('хуй на');
+    });
+    document.getElementById('no').addEventListener('click', function () {
+      alert('рука в гамні');
     });
   </script>
 </body>
